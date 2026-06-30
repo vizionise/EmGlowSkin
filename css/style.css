@@ -67,6 +67,19 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 500; }
 .btn-block { display: flex; width: 100%; padding: 18px 24px; }
 .btn-dark { background: #b9b9b9; }
 
+.page-heading { margin: 54px 0 34px; }
+.page-heading h1 {
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  line-height: .98;
+  font-variant: small-caps;
+  margin-top: 10px;
+}
+.page-heading > p:not(.section-label) {
+  max-width: 620px;
+  margin-top: 18px;
+  font-size: 1.08rem;
+}
+
 /* ---------- Header ---------- */
 .site-header {
   display: flex; align-items: center; justify-content: space-between;
@@ -186,6 +199,13 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 500; }
 
 /* ---------- Gallery carousel ---------- */
 .gallery { padding: 20px 0 60px; }
+.gallery-heading { margin-bottom: 24px; }
+.gallery-heading h2 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1;
+  font-variant: small-caps;
+  margin-top: 8px;
+}
 .carousel { position: relative; display: flex; align-items: center; gap: 14px; }
 .car-viewport { overflow: hidden; flex: 1; }
 .car-track { display: flex; transition: transform .45s ease; }
@@ -217,6 +237,21 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 500; }
 
 /* ---------- Footer ---------- */
 .site-footer { background: #c8c8c8; text-align: center; padding: 56px 20px; color: #2a2a2a; }
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 18px 28px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.footer-nav a {
+  color: #2a2a2a;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-size: .72rem;
+  font-weight: 800;
+}
+.footer-nav a:hover { text-decoration: underline; text-underline-offset: 5px; }
 .social { display: flex; gap: 12px; justify-content: center; margin-bottom: 26px; flex-wrap: wrap; }
 .social a {
   color: #2a2a2a; border: 1px solid rgba(42,42,42,.28); padding: 9px 14px;
@@ -270,19 +305,54 @@ hr.rule { border: none; border-top: 1px solid var(--line); margin: 10px 0; }
 .about-img { background: linear-gradient(135deg, #b86a4a, #7a4030); min-height: 600px; }
 
 /* ---------- Contact ---------- */
-.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; padding: 50px 0 70px; }
-.contact-form label { display: block; }
-.contact-form input, .contact-form textarea {
-  width: 100%; border: none; border-bottom: 1px solid var(--line);
-  padding: 14px 2px; margin-bottom: 26px; font-family: var(--sans); font-size: 1rem; background: transparent;
+.contact-page { padding-bottom: 70px; }
+.contact-heading { margin-bottom: 40px; }
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr); gap: 34px; padding: 0 0 34px; align-items: stretch; }
+.contact-panel {
+  background: #f4f4f4;
+  border: 1px solid rgba(26,26,26,.06);
+  padding: 38px;
 }
-.contact-form textarea { border: 1px solid var(--line); min-height: 140px; padding: 12px; }
+.contact-form label {
+  display: block;
+  color: var(--ink);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.contact-form input:not([type="checkbox"]), .contact-form textarea {
+  width: 100%; border: none; border-bottom: 1px solid var(--line);
+  padding: 12px 2px 14px; margin: 8px 0 24px; font-family: var(--sans); font-size: 1rem; background: transparent;
+  color: var(--body);
+}
+.contact-form textarea { border: 1px solid var(--line); min-height: 150px; padding: 12px; resize: vertical; }
 .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--muted); }
 .checkbox-row { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 22px; }
-.contact-info h2 { font-family: var(--sans); font-weight: 400; font-size: 1.55rem; color: var(--ink); margin-bottom: 18px; }
-.contact-info .big { font-size: 1.5rem; }
+.checkbox-row input { margin-top: 4px; flex: 0 0 auto; }
+.checkbox-row label { text-transform: none; letter-spacing: 0; font-weight: 400; color: var(--body); font-size: 1rem; }
+.form-note { font-size: .78rem; color: var(--muted); text-align: center; margin-top: 14px; }
+.contact-info { display: flex; flex-direction: column; }
+.contact-info h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.02; color: var(--ink); margin: 10px 0 18px; font-variant: small-caps; }
 .contact-info p { margin-bottom: 16px; }
-.contact-info a { color: var(--muted); }
+.contact-info a { color: var(--ink); }
+.contact-list {
+  display: grid;
+  gap: 18px;
+  margin: 24px 0 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.contact-list span {
+  display: block;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-size: .72rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
 .map { height: 300px; background: linear-gradient(135deg, #dfe8d8, #cfe0e6); }
 
 /* ---------- FAQ ---------- */
@@ -303,8 +373,9 @@ hr.rule { border: none; border-top: 1px solid var(--line); margin: 10px 0; }
 .faq-a p { padding: 0 0 22px; }
 
 /* ---------- Specials ---------- */
-.specials { padding: 60px 0; }
-.specials .section-label { margin-bottom: 30px; }
+.specials { padding: 34px 32px 60px; }
+.specials-heading { text-align: center; margin-bottom: 32px; }
+.specials-flyer { display: block; width: 100%; max-width: 820px; margin: 0 auto; border-radius: 2px; box-shadow: 0 18px 44px rgba(0,0,0,.10); }
 .summer-card {
   background: var(--cream); position: relative; overflow: hidden;
   padding: 70px 60px; border-radius: 2px; max-width: 1000px; margin: 0 auto;
@@ -349,18 +420,30 @@ hr.rule { border: none; border-top: 1px solid var(--line); margin: 10px 0; }
   .menu-toggle { display: block; }
   .hero-inner, .split, .menu-grid, .beauty-grid, .about-split, .contact-grid { grid-template-columns: 1fr; }
   .split { gap: 30px; padding: 50px 0; }
+  .page-heading { margin: 38px 0 26px; }
+  .page-heading h1 { font-size: clamp(2.55rem, 13vw, 3.6rem); }
   .reviews { padding: 34px 22px 66px; }
   .review-top { align-items: start; flex-direction: column; }
   .review-controls { align-self: flex-end; }
   .review-card { flex-basis: 100%; min-height: 0; padding: 26px; }
   .review-head { align-items: start; flex-direction: column; gap: 6px; }
-  .review-social { justify-content: stretch; }
-  .review-social a { flex: 1 1 100%; }
+  .review-social { justify-content: center; }
+  .review-social a { min-width: 132px; }
+  .gallery { padding: 10px 22px 56px; }
+  .gallery-heading { text-align: center; margin-bottom: 18px; }
   .car-slide img { height: 300px; }
   .car-arrow { width: 38px; height: 38px; }
   .car-thumbs img { width: 56px; height: 44px; }
-  .news-form { flex-direction: column; }
-  .news-form .btn { width: 100%; }
+  .news-form { flex-direction: column; align-items: center; }
+  .news-form input { width: 100%; }
+  .news-form .btn { width: auto; min-width: 170px; }
+  .btn-block { width: min(100%, 320px); margin-inline: auto; }
+  .form-row, .contact-grid { grid-template-columns: 1fr; }
+  .contact-panel { padding: 28px 22px; }
+  .contact-page { padding-bottom: 46px; }
+  .footer-nav { gap: 12px 18px; margin-bottom: 22px; }
+  .footer-nav a { font-size: .68rem; }
   .summer-card h2, .summer-item, .summer-item p { text-align: center; }
+  .specials { padding: 20px 22px 48px; }
   .cookie { left: 22px; width: auto; }
 }

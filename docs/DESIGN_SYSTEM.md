@@ -244,7 +244,7 @@ Rules:
 - Preserve arrow controls, dot controls, keyboard focus behavior, and reduced-motion support.
 - Use this carousel pattern for reviews only; do not reuse it for service menus.
 
-The review section may include `.review-social` links beneath the carousel for Google Profile, Facebook, and Instagram. Keep these links as quiet outlined buttons so they support the reviews rather than competing with the primary booking CTAs.
+The review section may include `.review-social` links beneath the carousel for Google, Facebook, and Instagram. Keep these links as quiet outlined buttons so they support the reviews rather than competing with the primary booking CTAs.
 
 ### Social Links
 
@@ -262,6 +262,7 @@ Use `.site-footer`.
 
 Footer content should remain consistent:
 
+- Minimal page navigation
 - Social row
 - Brand name
 - Address

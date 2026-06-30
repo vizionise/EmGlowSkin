@@ -11,5 +11,5 @@ Use these official profile links for site buttons, footer links, and future soci
 ## Usage Notes
 
 - Use `target="_blank"` and `rel="noopener"` for external links.
-- Label the Google link as `Google Profile` in review CTAs and `Google` in compact footer links.
+- Label the Google link as `Google` in review CTAs and footer links.
 - Keep the footer social links consistent across all HTML pages.
