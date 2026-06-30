@@ -4,7 +4,7 @@
   "private": true,
   "description": "Static marketing website for EmGlowSkin.",
   "scripts": {
-    "dev": "python3 -m http.server 5173",
+    "dev": "python3 scripts/dev-server.py",
     "serve": "python3 -m http.server 5173",
     "check": "node scripts/check-links.js"
   }

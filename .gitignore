@@ -8,3 +8,6 @@ dist/
 build/
 .cache/
 .claude/settings.local.json
+
+# local QR preview helper (regenerated on demand)
+preview-qr.png
