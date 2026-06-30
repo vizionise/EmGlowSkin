@@ -6,7 +6,12 @@
       "calm",
       "personal",
       "treatment-focused"
-    ]
+    ],
+    "links": {
+      "googleProfile": "https://share.google/H4Zwqt4fOLwYe9pZE",
+      "facebook": "https://www.facebook.com/emily.keith.344710",
+      "instagram": "https://www.instagram.com/emglowskin/"
+    }
   },
   "typography": {
     "families": {
@@ -113,6 +118,7 @@
       ".review-viewport",
       ".review-track",
       ".review-dots",
+      ".review-social",
       ".menu-grid",
       ".menu-item",
       ".beauty-grid",

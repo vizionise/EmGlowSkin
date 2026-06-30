@@ -32,6 +32,7 @@ Checks local file references from HTML and CSS.
 - `js/main.js`: mobile nav, FAQ accordion, cookie banner, gallery carousel, demo form handling
 - `docs/DESIGN_SYSTEM.md`: visual system, component rules, brand direction
 - `docs/design-tokens.json`: structured design token reference
+- `docs/SOCIAL_LINKS.md`: official Google, Facebook, and Instagram links
 - `img/`: image assets
 - `docs/`: planning and project notes
 
@@ -42,6 +43,7 @@ Checks local file references from HTML and CSS.
 - If you change `css/style.css` or `js/main.js`, keep the cache-busting query string aligned across pages when needed.
 - Use existing CSS variables and typography choices before adding new design tokens.
 - Follow `docs/DESIGN_SYSTEM.md` for colors, typography, spacing, component behavior, and imagery direction.
+- Use `docs/SOCIAL_LINKS.md` as the source of truth for social/profile links.
 - Do not introduce a frontend framework, build system, CMS, analytics tool, or form backend without user approval.
 - Use semantic HTML and accessible labels for interactive elements.
 - Keep mobile behavior in mind. Test desktop and narrow viewport layouts for page-level changes.

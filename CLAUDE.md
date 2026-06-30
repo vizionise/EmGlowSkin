@@ -26,6 +26,7 @@ Validates local file references from HTML and CSS.
 - `AGENTS.md`: Codex-oriented project instructions
 - `docs/DESIGN_SYSTEM.md`: brand and visual design system
 - `docs/design-tokens.json`: structured design token reference
+- `docs/SOCIAL_LINKS.md`: official social/profile links
 - `docs/PROJECT_STRUCTURE.md`: organization notes and future direction
 - `css/style.css`: global design system and responsive styles
 - `js/main.js`: shared interactive behavior
@@ -35,6 +36,7 @@ Validates local file references from HTML and CSS.
 - Keep header, navigation, footer, stylesheet links, script tags, and font imports synchronized across pages.
 - Reuse existing CSS variables and section patterns before adding new styles.
 - Follow `docs/DESIGN_SYSTEM.md` for typography, color, spacing, components, and imagery decisions.
+- Use `docs/SOCIAL_LINKS.md` as the source of truth for Google, Facebook, and Instagram links.
 - Add new shared behavior to `js/main.js`.
 - Place new images in `img/` using lowercase descriptive names.
 - Avoid adding dependencies or build tools without confirming with the user.

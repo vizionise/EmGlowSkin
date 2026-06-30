@@ -37,6 +37,7 @@ You can also open `index.html` directly in a browser, but the local server is be
 |-- img/                Gallery and site images
 |-- docs/               Project notes for future work
 |   |-- DESIGN_SYSTEM.md
+|   |-- SOCIAL_LINKS.md
 |   `-- design-tokens.json
 |-- AGENTS.md           Codex working instructions
 `-- CLAUDE.md           Claude Code working instructions
@@ -62,6 +63,7 @@ Check local HTML, CSS, JavaScript, and image references for missing files.
 - Shared navigation, footer, font imports, stylesheet links, and script tags appear across pages. Update them together.
 - Shared visual tokens live at the top of `css/style.css`.
 - Design system guidance lives in `docs/DESIGN_SYSTEM.md`; structured token values live in `docs/design-tokens.json`.
+- Official social/profile links live in `docs/SOCIAL_LINKS.md`.
 - Shared behavior belongs in `js/main.js`.
 - Keep image file names lowercase and descriptive when adding new assets.
 - Before committing, run `npm run check` and preview the changed pages locally.
