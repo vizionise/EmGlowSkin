@@ -165,6 +165,8 @@ Button copy should be short and direct:
 - Sign Up
 - Send
 
+Booking CTAs should link to the Square booking page stored in `docs/BOOKING_LINKS.md`. Keep Contact navigation and contact form actions separate from booking CTAs.
+
 ### Section Labels
 
 Use `.section-label` for small uppercase labels above content blocks.

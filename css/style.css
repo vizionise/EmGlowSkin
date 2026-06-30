@@ -46,11 +46,13 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 500; }
 
 /* ---------- Buttons ---------- */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: var(--btn);
   color: var(--ink);
   text-transform: uppercase;
-  letter-spacing: .22em;
+  letter-spacing: .16em;
   font-size: .8rem;
   font-weight: 700;
   padding: 16px 34px;
@@ -58,9 +60,11 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 500; }
   cursor: pointer;
   transition: background .2s;
   font-family: var(--sans);
+  line-height: 1.2;
+  text-align: center;
 }
 .btn:hover { background: var(--btn-hover); }
-.btn-block { display: block; width: 100%; text-align: center; padding: 20px; }
+.btn-block { display: flex; width: 100%; padding: 18px 24px; }
 .btn-dark { background: #b9b9b9; }
 
 /* ---------- Header ---------- */
