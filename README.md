@@ -36,6 +36,8 @@ You can also open `index.html` directly in a browser, but the local server is be
 |   `-- main.js         Shared site interactions
 |-- img/                Gallery and site images
 |-- docs/               Project notes for future work
+|   |-- DESIGN_SYSTEM.md
+|   `-- design-tokens.json
 |-- AGENTS.md           Codex working instructions
 `-- CLAUDE.md           Claude Code working instructions
 ```
@@ -59,6 +61,7 @@ Check local HTML, CSS, JavaScript, and image references for missing files.
 - Keep root HTML pages static unless we intentionally migrate to a framework.
 - Shared navigation, footer, font imports, stylesheet links, and script tags appear across pages. Update them together.
 - Shared visual tokens live at the top of `css/style.css`.
+- Design system guidance lives in `docs/DESIGN_SYSTEM.md`; structured token values live in `docs/design-tokens.json`.
 - Shared behavior belongs in `js/main.js`.
 - Keep image file names lowercase and descriptive when adding new assets.
 - Before committing, run `npm run check` and preview the changed pages locally.

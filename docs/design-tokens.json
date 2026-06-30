@@ -1,0 +1,130 @@
+{
+  "brand": {
+    "name": "EmGlowSkin",
+    "tone": [
+      "refined",
+      "calm",
+      "personal",
+      "treatment-focused"
+    ]
+  },
+  "typography": {
+    "families": {
+      "display": "\"Cormorant Garamond\", Georgia, serif",
+      "body": "\"Mulish\", \"Helvetica Neue\", Arial, sans-serif",
+      "logo": "\"Oswald\", \"Archivo Narrow\", \"Mulish\", sans-serif"
+    },
+    "scale": {
+      "displayXl": "clamp(3rem, 8vw, 6rem)",
+      "displayLg": "clamp(2.4rem, 6vw, 4.6rem)",
+      "displayMd": "clamp(2rem, 4vw, 2.9rem)",
+      "headingLg": "2.9rem",
+      "headingMd": "2.4rem",
+      "headingSm": "1.55rem",
+      "bodyLg": "1.4rem",
+      "bodyMd": "1rem",
+      "labelSm": ".78rem",
+      "buttonSm": ".8rem"
+    },
+    "letterSpacing": {
+      "logo": ".04em",
+      "label": ".22em",
+      "nav": ".2em",
+      "footerBrand": ".14em",
+      "footerMeta": ".08em",
+      "scriptSerif": ".02em"
+    }
+  },
+  "color": {
+    "core": {
+      "ink": "#1a1a1a",
+      "body": "#4a4a4a",
+      "muted": "#8a8a8a",
+      "line": "#e4e4e4",
+      "soft": "#efefef",
+      "dark": "#121212",
+      "white": "#ffffff"
+    },
+    "ui": {
+      "button": "#bdbdbd",
+      "buttonHover": "#a9a9a9",
+      "buttonDark": "#b9b9b9",
+      "panel": "#f2f2f2",
+      "heroLeft": "#e9e9e9",
+      "heroRight": "#f4f4f4",
+      "footer": "#c8c8c8",
+      "cookie": "#cfcfcf"
+    },
+    "accent": {
+      "star": "#e6a93b",
+      "specialsNavy": "#1c3a63",
+      "specialsCream": "#fbf6ea",
+      "specialsLeaf": "#b7c98a",
+      "warmImageA": "#b86a4a",
+      "warmImageB": "#7a4030"
+    }
+  },
+  "layout": {
+    "maxWidth": "1240px",
+    "sidePadding": "32px",
+    "mobileBreakpoint": "880px",
+    "headerPadding": "28px 32px",
+    "sectionPadding": {
+      "splitDesktop": "90px 0",
+      "splitMobile": "50px 0",
+      "menu": "70px 0",
+      "newsletter": "80px 0",
+      "footer": "56px 20px",
+      "serviceIntro": "44px 20px"
+    },
+    "gaps": {
+      "nav": "34px",
+      "split": "60px",
+      "menuGrid": "48px 70px",
+      "contactGrid": "80px",
+      "form": "16px"
+    }
+  },
+  "components": {
+    "buttons": [
+      ".btn",
+      ".btn-block",
+      ".btn-dark"
+    ],
+    "navigation": [
+      ".site-header",
+      ".logo",
+      ".menu-toggle",
+      ".nav",
+      ".has-drop",
+      ".dropdown"
+    ],
+    "sections": [
+      ".wrap",
+      ".section-label",
+      ".hero",
+      ".service-hero",
+      ".service-intro",
+      ".menu-section"
+    ],
+    "content": [
+      ".review-card",
+      ".review-carousel",
+      ".review-viewport",
+      ".review-track",
+      ".review-dots",
+      ".menu-grid",
+      ".menu-item",
+      ".beauty-grid",
+      ".contact-grid",
+      ".faq-list",
+      ".summer-card"
+    ]
+  },
+  "motion": {
+    "hover": ".2s",
+    "accordion": ".3s",
+    "carousel": ".45s",
+    "carouselAutoplay": "10000ms"
+  }
+}

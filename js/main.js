@@ -18,6 +18,102 @@ if (cookie) {
     }));
 }
 
+// Reviews carousel
+(function () {
+  const section = document.querySelector('[data-reviews]');
+  if (!section) return;
+
+  const viewport = section.querySelector('.review-viewport');
+  const track = section.querySelector('.review-track');
+  const cards = [...section.querySelectorAll('.review-card')];
+  const prev = section.querySelector('.review-prev');
+  const next = section.querySelector('.review-next');
+  const dotsWrap = section.querySelector('.review-dots');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let index = 0;
+  let timer;
+
+  function perPage() {
+    if (window.matchMedia('(max-width: 880px)').matches) return 1;
+    if (window.matchMedia('(max-width: 1080px)').matches) return 2;
+    return 3;
+  }
+
+  function maxIndex() {
+    return Math.max(cards.length - perPage(), 0);
+  }
+
+  function cardStep() {
+    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+    return cards[0].getBoundingClientRect().width + gap;
+  }
+
+  function renderDots() {
+    dotsWrap.innerHTML = '';
+    for (let i = 0; i <= maxIndex(); i += 1) {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.setAttribute('aria-label', 'Show review set ' + (i + 1));
+      dot.addEventListener('click', () => {
+        go(i);
+        play();
+      });
+      dotsWrap.appendChild(dot);
+    }
+  }
+
+  function updateDots() {
+    [...dotsWrap.children].forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+    });
+  }
+
+  function go(nextIndex, smooth = true) {
+    const max = maxIndex();
+    if (nextIndex > max) index = 0;
+    else if (nextIndex < 0) index = max;
+    else index = nextIndex;
+
+    viewport.scrollTo({
+      left: cardStep() * index,
+      behavior: smooth && !reduceMotion.matches ? 'smooth' : 'auto',
+    });
+    updateDots();
+  }
+
+  function stop() {
+    clearInterval(timer);
+  }
+
+  function play() {
+    stop();
+    if (!reduceMotion.matches) timer = setInterval(() => go(index + 1), 5500);
+  }
+
+  prev.addEventListener('click', () => {
+    go(index - 1);
+    play();
+  });
+  next.addEventListener('click', () => {
+    go(index + 1);
+    play();
+  });
+  section.addEventListener('mouseenter', stop);
+  section.addEventListener('mouseleave', play);
+  section.addEventListener('focusin', stop);
+  section.addEventListener('focusout', play);
+  window.addEventListener('resize', () => {
+    const oldMax = maxIndex();
+    renderDots();
+    if (index > oldMax) index = oldMax;
+    go(index, false);
+  });
+
+  renderDots();
+  go(0, false);
+  play();
+})();
+
 // Gallery carousel
 (function () {
   const car = document.getElementById('gallery');

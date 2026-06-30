@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Mulish:wght@300;400;500;600;700;800&family=Oswald:wght@500;600&family=Archivo+Narrow:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=3">
+<link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
 
@@ -34,7 +34,7 @@
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-left">
-      <div class="hero-logo"><span class="spark">&#10022;</span><span class="em">Em</span>GlowSkin</div>
+      <img src="img/emglow-skin-hero.webp" alt="EmGlowSkin">
     </div>
     <div class="hero-right">
       <h1>Results +<br>Relaxation in<br>Branford, CT</h1>
@@ -47,7 +47,7 @@
 <!-- Welcome -->
 <section class="wrap">
   <div class="split">
-    <div class="ph"></div>
+    <img class="welcome-photo" src="img/emily-keith-home.webp" alt="Emily of EmGlowSkin in her Branford, CT studio">
     <div>
       <h2 class="script-serif">Discover Your Best Self</h2>
       <p><b>Welcome to <i>EmGlowSkin</i></b> — where science meets simplicity and skincare becomes self-care. Em thoughtfully curated treatments designed to bring out your natural radiance, one glow at a time.</p>
@@ -58,16 +58,131 @@
 </section>
 
 <!-- Reviews -->
-<section class="wrap reviews">
-  <p class="section-label" style="margin-bottom:28px">Skin Success Stories</p>
-  <div class="review-card">
-    <div class="review-head">
-      <h3>Christine Nizolek</h3>
-      <span class="review-date">10 July 2024</span>
+<section class="wrap reviews" data-reviews>
+  <div class="review-top">
+    <div>
+      <p class="section-label">Skin Success Stories</p>
+      <h2>Glowing words from real clients</h2>
     </div>
-    <p class="review-sub">IS Harmony Facial</p>
-    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-    <p class="review-text">Had a great IS Harmony facial with Emily! It was peaceful and relaxing and she did a wonderful job! My skin looks and feels amazing! Highly recommend her!!</p>
+    <div class="review-controls" aria-label="Review carousel controls">
+      <button class="review-arrow review-prev" type="button" aria-label="Previous review">&#10094;</button>
+      <button class="review-arrow review-next" type="button" aria-label="Next review">&#10095;</button>
+    </div>
+  </div>
+  <div class="review-carousel" id="reviews-carousel" aria-label="Client reviews">
+    <div class="review-viewport">
+      <div class="review-track">
+        <article class="review-card">
+          <div class="review-head">
+            <h3>Christine Nizolek</h3>
+            <span class="review-date">10 July 2024</span>
+          </div>
+          <p class="review-sub">IS Harmony Facial</p>
+          <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="review-text">Had a great IS Harmony facial with Emily! It was peaceful and relaxing and she did a wonderful job! My skin looks and feels amazing! Highly recommend her!!</p>
+        </article>
+        <article class="review-card">
+          <div class="review-head">
+            <h3>Ginette Perron</h3>
+            <span class="review-date">Yesterday</span>
+          </div>
+          <p class="review-sub">iS Facial w/ Microdermabrasion</p>
+          <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="review-text">Went for my monthly facial and microdermabrasion with Emily. Always a treat. She has &quot;The Touch&quot; - Tracy would be proud. Her technique is relaxing and calming. My skin feels like &quot;BUTTA&quot;!!!........ so smooth. Thank you Em Ginette</p>
+        </article>
+        <article class="review-card">
+          <div class="review-head">
+            <h3>Monica Madigan</h3>
+            <span class="review-date">Today</span>
+          </div>
+          <p class="review-sub">iS Facial w/ Dermaplaning &amp; Linder Health Peel</p>
+          <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="review-text">Emily is knowledgeable which is demonstrated by her explanation of each service and excellent outcome. My skin has never looked so good!</p>
+        </article>
+        <article class="review-card">
+          <div class="review-head">
+            <h3>Wendy Walden</h3>
+            <span class="review-date">5 April 2024</span>
+          </div>
+          <p class="review-sub">Custom Facial</p>
+          <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="review-text">Even during an earthquake (!) Emily was calm and professional and gave me an excellent and a very relaxing facial. I had questions about my skin care routine and she answered them knowledgeably and with clarity.</p>
+        </article>
+        <article class="review-card">
+          <div class="review-head">
+            <h3>Odete Brown</h3>
+            <span class="review-date">6 August 2024</span>
+          </div>
+          <p class="review-sub">Lip Wax, Under Arm Wax &amp; Eyebrow Wax</p>
+          <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="review-text">Emily was friendly, professional and gentle. As a first time client, I'm looking forward to returning for same and additional services, in part, due to today's wonderful experience.</p>
+        </article>
+        <article class="review-card">
+          <div class="review-head">
+            <h3>Jayne Hill</h3>
+            <span class="review-date">Today</span>
+          </div>
+          <p class="review-sub">iS Fire and Ice Facial</p>
+          <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="review-text">So wonder to meet Emily and to find that she grew up very close to my home in Guilford. She was lovely to get to know and my Fire and Ice facial and neck and hand massage were heaven.</p>
+        </article>
+        <article class="review-card">
+          <div class="review-head">
+            <h3>Susan Greenvall</h3>
+            <span class="review-date">25 January 2025</span>
+          </div>
+          <p class="review-sub">iS Fire and Ice Facial</p>
+          <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="review-text">I had such a relaxing and enjoyable facial. Emily was personable, knowledgeable, and skilled - she put me right at ease. My newly exfoliated skin feels amazing.</p>
+        </article>
+        <article class="review-card">
+          <div class="review-head">
+            <h3>Lisa Nigosanti</h3>
+            <span class="review-date">23 March 2024</span>
+          </div>
+          <p class="review-sub">Sanitas Facial, Eyebrow Wax &amp; Lip Wax</p>
+          <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="review-text">First time having a facial with Emily. She was so knowledgeable &amp; she customized my facial to the needs of my skin.</p>
+        </article>
+        <article class="review-card">
+          <div class="review-head">
+            <h3>Darra Redding</h3>
+            <span class="review-date">Today</span>
+          </div>
+          <p class="review-sub">Eyebrow Tint &amp; Lip Wax</p>
+          <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="review-text">Emily is a brow artist!! Not only is she extremely talented, she is so warm and friendly. I highly recommend her!</p>
+        </article>
+        <article class="review-card">
+          <div class="review-head">
+            <h3>Anne Knapp</h3>
+            <span class="review-date">24 July 2024</span>
+          </div>
+          <p class="review-sub">Custom Facial</p>
+          <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="review-text">Emily is a wonderful esthetician. She did a beautiful job on my face and, I felt so relaxed! I will definitely be back!!</p>
+        </article>
+        <article class="review-card">
+          <div class="review-head">
+            <h3>Carly Feldman</h3>
+            <span class="review-date">20 June 2024</span>
+          </div>
+          <p class="review-sub">iS Facial w/ Microdermabrasion</p>
+          <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="review-text">Such a wonderful service!!! I left absolutely glowing. Emily is very thorough, pleasant and professional. I would highly recommend her to anyone wanting to look their absolute best &#128151;</p>
+        </article>
+        <article class="review-card">
+          <div class="review-head">
+            <h3>Sarah Muise</h3>
+            <span class="review-date">3 April 2025</span>
+          </div>
+          <p class="review-sub">Microdermabrasion &amp; Skinsations Facial</p>
+          <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="review-text">I love Emily!!! She was very knowledgeable and answered all my questions as it was my first facial. She was relatable and easy to talk to... which made it fun and relaxing! She listened to what I needed specifically for my skin type and educated me on how to prevent wrinkles and keep it smooth/glowing. I loved it. Thank you so much. Cant wait to come back -Sarah</p>
+        </article>
+      </div>
+    </div>
+    <div class="review-dots" aria-label="Review position"></div>
   </div>
 </section>
 
@@ -120,6 +235,6 @@
   </div>
 </div>
 
-<script src="js/main.js?v=3"></script>
+<script src="js/main.js?v=4"></script>
 </body>
 </html>
