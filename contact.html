@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
 <title>Contact Us | EMGlow Skin Spa</title>
 <meta name="description" content="Have questions or ready to book your next treatment? Contact EMGlow Skin Spa in Branford, CT.">
 <link rel="canonical" href="https://emglowskin.com/contact">
@@ -46,7 +48,12 @@
   </div>
 
   <div class="contact-grid">
-    <form class="contact-form contact-panel" data-demo>
+    <form class="contact-form contact-panel" action="https://formsubmit.co/Emily@emglowskin.com" method="POST">
+      <input type="hidden" name="_subject" value="New EmGlowSkin contact form submission">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_next" value="https://emglowskin.com/contact.html?sent=true">
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
       <div class="form-row">
         <label>Name<input type="text" name="name" autocomplete="name"></label>
         <label>Phone*<input type="tel" name="phone" autocomplete="tel" required></label>
@@ -54,11 +61,11 @@
       <label>Email*<input type="email" name="email" autocomplete="email" required></label>
       <label>Message<textarea name="message"></textarea></label>
       <div class="checkbox-row">
-        <input type="checkbox" id="optin">
+        <input type="checkbox" id="optin" name="opt_in" value="yes">
         <label for="optin">Sign up for updates, promotions, and skincare notes.</label>
       </div>
       <button type="submit" class="btn btn-block btn-dark">Send</button>
-      <p class="form-note">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+      <p class="form-note">Your message will be sent to Emily through the secure form provider. Please do not include sensitive medical information.</p>
     </form>
 
     <div class="contact-info contact-panel">
