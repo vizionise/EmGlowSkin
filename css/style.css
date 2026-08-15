@@ -115,7 +115,16 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 500; }
 .dropdown a { display: block; padding: 10px 22px; letter-spacing: .12em; }
 .dropdown a:hover { background: var(--soft); }
 
-.menu-toggle { display: none; background: none; border: none; font-size: 1.6rem; cursor: pointer; }
+.menu-toggle {
+  display: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  color: var(--ink);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
 
 /* ---------- Hero ---------- */
 .hero { max-width: var(--maxw); margin: 8px auto 0; padding: 0 32px; }
