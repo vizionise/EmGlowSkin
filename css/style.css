@@ -485,9 +485,33 @@ hr.rule { border: none; border-top: 1px solid var(--line); margin: 10px 0; }
 .faq-a p { padding: 0 0 22px; }
 
 /* ---------- Specials ---------- */
+.specials-page { background: var(--soft); }
+.specials-page .site-header,
+.specials-page .site-footer { background: #fff; }
 .specials { padding: 34px 32px 60px; }
 .specials-heading { text-align: center; margin-bottom: 32px; }
-.specials-flyer { display: block; width: 100%; max-width: 820px; margin: 0 auto; border-radius: 2px; box-shadow: 0 18px 44px rgba(0,0,0,.10); }
+.specials-flyers { display: grid; gap: 36px; width: 100%; max-width: 844px; margin: 0 auto; }
+.specials-flyer {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 18px 44px rgba(0,0,0,.10);
+}
+.specials-page .booking-cta {
+  max-width: 820px;
+  margin: 0 auto 64px;
+  padding: 48px 42px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 18px 44px rgba(0,0,0,.08);
+}
+.specials-page .booking-cta .btn-dark {
+  background: #fff;
+  border: 1px solid var(--line);
+}
+.specials-page .booking-cta .btn-dark:hover { background: #f8f8f8; }
 .summer-card {
   background: var(--cream); position: relative; overflow: hidden;
   padding: 70px 60px; border-radius: 2px; max-width: 1000px; margin: 0 auto;
@@ -577,4 +601,7 @@ hr.rule { border: none; border-top: 1px solid var(--line); margin: 10px 0; }
   .footer-nav a { font-size: .68rem; }
   .summer-card h2, .summer-item, .summer-item p { text-align: center; }
   .specials { padding: 20px 22px 48px; }
+  .specials-flyers { gap: 22px; }
+  .specials-flyer { padding: 8px; }
+  .specials-page .booking-cta { width: auto; margin: 0 22px 48px; padding: 32px 22px; }
 }
