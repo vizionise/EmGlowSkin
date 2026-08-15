@@ -308,7 +308,7 @@ hr.rule { border: none; border-top: 1px solid var(--line); margin: 10px 0; }
   padding: 26px;
   box-shadow: 0 24px 58px rgba(0,0,0,.08);
 }
-.beauty-card img { width: 100%; aspect-ratio: 3/4; object-fit: cover; margin: 18px 0 20px; }
+.beauty-card img { width: 100%; height: auto; margin: 18px 0 20px; }
 .beauty-card .title {
   font-size: 1.06rem;
   color: var(--ink);
