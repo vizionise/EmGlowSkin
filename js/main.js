@@ -7,17 +7,6 @@ document.querySelectorAll('.faq-q').forEach(q => {
   q.addEventListener('click', () => q.closest('.faq-item').classList.toggle('open'));
 });
 
-// Cookie banner
-const cookie = document.querySelector('.cookie');
-if (cookie) {
-  if (localStorage.getItem('cookieChoice')) cookie.classList.add('hide');
-  cookie.querySelectorAll('button').forEach(b =>
-    b.addEventListener('click', () => {
-      localStorage.setItem('cookieChoice', b.dataset.choice);
-      cookie.classList.add('hide');
-    }));
-}
-
 // Reviews carousel
 (function () {
   const section = document.querySelector('[data-reviews]');
