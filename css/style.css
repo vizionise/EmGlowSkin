@@ -87,8 +87,8 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 500; }
   width: 100%; max-width: min(var(--maxw), 100vw); margin: 0 auto; padding: 28px 32px;
 }
 .logo {
-  font-family: "Oswald", "Archivo Narrow", var(--sans);
-  font-weight: 500;
+  font-family: "Yeseva One", Georgia, serif;
+  font-weight: 400;
   font-size: 1.7rem;
   letter-spacing: .04em;
   color: var(--ink);
