@@ -81,21 +81,21 @@ The base palette is mostly warm grayscale, with a navy/cream/leaf set reserved f
 | `body` | `#4a4a4a` | Main copy |
 | `muted` | `#8a8a8a` | Labels, notes, secondary links |
 | `line` | `#e4e4e4` | Rules, form lines, dropdown borders |
-| `soft` | `#efefef` | Hover backgrounds |
+| `soft` | `#efefef` | Global page canvas and hover backgrounds |
 | `dark` | `#121212` | Dark service intro bands |
-| `white` | `#ffffff` | Page background |
+| `white` | `#ffffff` | Secondary panels, cards, and content surfaces |
 
 ### UI Neutrals
 
 | Token | Hex | Usage |
 | --- | --- | --- |
-| `button` | `#bdbdbd` | Primary CTA background |
-| `button-hover` | `#a9a9a9` | CTA hover |
-| `button-dark` | `#b9b9b9` | Full-width booking CTA |
+| `button` | `#c8c8c8` | Primary CTA background |
+| `button-hover` | `#b8b8b8` | CTA hover |
+| `button-dark` | `#c8c8c8` | Full-width booking CTA |
 | `panel` | `#f2f2f2` | Review cards, about text |
 | `hero-left` | `#e9e9e9` | Home hero brand side |
 | `hero-right` | `#f4f4f4` | Home hero CTA side |
-| `footer` | `#c8c8c8` | Site footer |
+| `header-footer` | `#c8c8c8` | Sticky site header and site footer |
 | `cookie` | `#cfcfcf` | Cookie banner |
 
 ### Accent Colors
@@ -143,6 +143,7 @@ Use `.site-header`, `.logo`, `.menu-toggle`, `.nav`, `.has-drop`, and `.dropdown
 Rules:
 
 - Keep the same nav order across pages: Home, Services, Specials, Contact, About, FAQ.
+- Keep the header sticky at the top of the viewport with the shared gray chrome color.
 - Add `.active` to the current top-level nav item.
 - On service pages, the Services link receives `.active`.
 - Mobile nav opens by toggling `.nav.open`.
